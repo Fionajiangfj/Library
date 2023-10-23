@@ -1,0 +1,162 @@
+/* universal styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* layout page */
+header {
+    height: 13vh;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-left: 50px;
+    height: 100%;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+
+/* home page */
+.book-row-home {
+    display: flex;
+    height: 300px;
+    gap: 100px;
+    width: 60%;
+    border: 1px solid #cccccc;
+
+    margin: 30px auto;
+}
+
+.book-row-home > img {
+    width: 200px;
+}
+
+.book-details-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 60%;
+    width: 60%;
+    margin: auto 0;
+
+}
+
+.title-home {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.author-home {
+    font-size: 16px;
+    color: #565959;
+}
+
+.btn-home {
+    background-color: black;
+    color: white;
+
+    width: 40%;
+    height: 25%;
+    /* padding: 10px; */
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+/* profile page */
+#welcome-profile {
+    text-align: center;
+}
+
+#user-info{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+#no-books-msg {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* login page  */
+.h3-msg {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#div-login {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 70%;
+    margin: 30px auto;
+}
+
+#form-login > input {
+    height: 40px;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+#form-login > button {
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+    background-color: black;
+    color: white;
+}
+
+/* error page */
+#error-msg {
+    text-align: center;
+}

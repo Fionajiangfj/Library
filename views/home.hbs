@@ -1,0 +1,24 @@
+<main>
+    {{#if bookList}}
+
+        {{#each bookList}}
+            <form action="/borrow/{{this._id}}" method="get">
+                <div class="book-row-home">
+                    <img src="{{this.image}}" alt="{{this.title}}" />
+                    <div class="book-details-home">
+                        <p class="title-home">{{this.title}}</p>
+                        <p class="author-home">by {{this.author}}</p>
+                        {{#if this.borrowedBy}}
+                            <p>UNAVAILABLE - Currently on loan</p>
+                        {{else}}
+                            <button type="submit" class="btn-home">BORROW NOW</button>
+                        {{/if}}
+                    </div>
+                </div>
+            </form>
+        {{/each}}
+
+    {{else}}
+        <h1>No books available.</h1>
+    {{/if}}
+</main>

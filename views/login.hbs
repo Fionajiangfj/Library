@@ -1,0 +1,15 @@
+<main>
+    <div id="div-login">
+        {{#if msg}}
+        <h3 class="h3-msg">{{msg}}</h3>
+        {{else}}
+        <h3 class="h3-msg">Please login below</h3>
+        {{/if}}
+
+        <form action="/login" method="post" id="form-login">
+            <input name="cardNum" type="text" placeholder="Library Card Number" />
+            <input name="password" type="password" placeholder="Password" />
+            <button>Login</button>
+        </form>
+    </div>
+</main>
